@@ -4,6 +4,7 @@ include_once './config/conection.php';
 
 if (isset($_POST['submit'])){
 $Email_log=$_POST['Email_log'];
+$_SESSION['Email_log']=$Email_log;
 $password_log=$_POST['password_log'];
 $sucsess="";
 $error="";

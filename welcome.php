@@ -19,16 +19,20 @@ include_once './config/conection.php';
 <div id="center">
 
    <?php
-	$sqli="SELECT * FROM php_users;";
-	$result= mysqli_query($conn, $sqli);
-	$result_check= mysqli_num_rows($result);
+  
+   
+	// $sqli="SELECT * FROM php_users WHERE Email='$Email_log'; ";
+	// $result= mysqli_query($conn, $sqli);
+	// $result_check= mysqli_num_rows($result);
 
-	if ($result_check > 0) {
-		$row=mysqli_fetch_assoc($result);
-	  echo"<br> <h5> Welcome ". $row['First_Name']. "  ". $row['Sec_Name']."  ".$row['Th_Name']." ".$row['Last_Name']."<br>";
-	  echo "<div><h5> Your Email is : </h5>".$row['Email'] ;
-	 echo "<h5> Your Mobile Phone is :</h5> ".$row['phone_no']."<br> *******************************************************"; 
-		}
+	$sqli="SELECT * FROM php_users ORDER BY id DESC LIMIT 1;";
+	$lastrow = mysqli_query($conn,$sqli);
+	$get_last_row = mysqli_fetch_array($lastrow);
+
+	echo"<br> <h5> Welcome ". $get_last_row['First_Name']. "  ". $get_last_row['Sec_Name']."  ".$get_last_row['Th_Name']." ".$get_last_row['Last_Name']."<br>";
+	echo "<div><h5> Your Email is : </h5>".$get_last_row['Email'] ;
+	echo "<h5> Your Mobile Phone is :</h5> ".$get_last_row['phone_no']."<br>"; 
+	// 	}
 		
 		?>
 

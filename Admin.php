@@ -39,40 +39,36 @@ setCookie('FirstName', date("H:i:s-m/d/y"), 60*24*60*60+time());
     </tr>
   </thead>
   <tbody>
+    
   <?php
-  $id= 1;
-  $sql1="SELECT * FROM php_users ;";
-  $result= mysqli_query($conn, $sql1);
-  $result_check= mysqli_num_rows($result);
-
-  if ($result_check > 0) {
-      while ($row=mysqli_fetch_assoc($result)) {
-      echo "<tr>
-              <td>".$id."</td>
-              <td>".$row['First_Name']."</td>
-              <td>".$row['Email']."</td>
-              <td>".$row['Password']."</td>
-              <td>".$row['Date_create']."</td>
-              <td>".$row['Last_login']."</td>
-              <td>"."<input type='submit' value='Update' name='update'> <br>"."</td>
-              <td>"."<input type='submit' value='Delete' name='delete'> <br>"."</td>
-
-          </tr>";
-      $id++;  
- }
-  }
-$id++;  
-    ?>
-
-    <!-- <tr>
-      <th scope="row"><?php# echo $_SERVER['REMOTE_ADDR'] ?></th>
-      <td><?php #echo $_SESSION['FirstName'] ;?> </td>
-      <td><?php #echo $_SESSION['Email'] ;?></td>
-      <td><?php #echo $_SESSION['password'] ;?></td>
-      <td><?php #echo $_SESSION['date_creat'] ;?></td>
-      <td><?php #echo $_COOKIE['FirstName'];  ;?></td>
-    </tr> -->
-   
+                     $id= 1;
+                     $sql1="SELECT * FROM php_users WHERE delete_col='0';";
+                     $result= mysqli_query($conn , $sql1);
+                     $result_check= mysqli_num_rows($result);
+                 
+                     if ($result_check > 0) {
+                         while ($row=mysqli_fetch_assoc($result)) {
+                         echo "<tr id=".$row['id'].">
+                                 <td>".$row['id']."</td>
+                                 <td>".$row['First_Name']."</td>
+                                 <td>".$row['Email']."</td>
+                                 <td>".$row['Password']."</td>
+                                 <td>".$row['Date_create']."</td>
+                                 <td>".$row['Last_login']."</td>
+                                 <td>"."
+                                 <form action='Update.php' method='post'>
+                                 <input type='hidden' name='edit_id' value=".$row['id'].">
+                                 <input type='submit' value='Update' name='edit_btn'> 
+                                 </form><br>"."</td>
+                                 <td>"."<form action='code.php' method='post'>
+                                 <input type='hidden' name='delete_id' value='".$row['id']."'>
+                                 <input type='submit' value='Delete' name='delete_btn'>
+                                 </form> <br>"."</td>
+                             </tr>";
+                       
+                    }
+                }
+                     ?>
   </tbody>
 </table>
 </div>
