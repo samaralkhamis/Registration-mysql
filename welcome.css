@@ -1,0 +1,180 @@
+body {
+    background-image: url('./img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+div#center {
+  position: absolute;
+  Left:10%;
+    margin: 5% 30%;
+    height: 330px;
+text-align:center;
+
+}
+h1{
+font-size:4em;
+color:#000;
+font-weight:500;
+margin:10px;}
+
+div#center span {
+    position: relative;
+top:-5px;
+    font-size: 30px;
+    font-weight: 700;
+  color: inherit;
+}
+
+@-webkit-keyframes janimation {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0) translate(0px, 0px);
+    color: transparent;
+    }
+    95% {
+        -webkit-transform: rotate(0deg) scale(1.1) translate(0px, 5px);
+        color: #999; 
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(1) translate(0px, 0px);
+        color: #999; 
+    } 
+}
+
+div#center div {
+    position: relative;
+    display: inline-block;
+    -webkit-animation: janimation 5s linear;
+}
+
+div#center div.letter_container_1 {
+    -webkit-animation-delay: 0s;		
+}	
+
+div#center div.letter_container_2 {
+    -webkit-animation-delay: .1s;		
+}	
+
+div#center div.letter_container_3 {
+    -webkit-animation-delay: .2s;		
+}	
+
+div#center div.letter_container_4 {
+    -webkit-animation-delay: .3s;		
+}	
+
+div#center div.letter_container_5 {
+    -webkit-animation-delay: .4s;		
+}	
+
+div#center div.letter_container_6 {
+    -webkit-animation-delay: .5s;		
+}	
+div#center div.letter_container_7 {
+    -webkit-animation-delay: .6s;		
+}
+div#center div.letter_container_8 {
+    -webkit-animation-delay: .7s;		
+}	
+
+div#center div.letter_container_9 {
+    -webkit-animation-delay: .8s;		
+}	
+
+div#center div.letter_container_10 {
+    -webkit-animation-delay: .9s;		
+}	
+
+div#center div.letter_container_11 {
+    -webkit-animation-delay: 1s;		
+}	
+
+div#center div.letter_container_12 {
+    -webkit-animation-delay: 1.1s;		
+}	
+
+div#center div.letter_container_13 {
+    -webkit-animation-delay: 1.2s;		
+}	
+div#center div.letter_container_14 {
+    -webkit-animation-delay: 1.3s;		
+}
+div#center div.letter_container_15 {
+    -webkit-animation-delay: 1.4s;		
+}	
+
+div#center div.letter_container_16 {
+    -webkit-animation-delay: 1.5s;		
+}	
+
+div#center div.letter_container_17 {
+    -webkit-animation-delay: 1.6s;		
+}	
+
+div#center div.letter_container_18 {
+    -webkit-animation-delay: 1.7s;		
+}	
+
+div#center div.letter_container_19 {
+    -webkit-animation-delay: 1.8s;		
+}	
+
+div#center div.letter_container_20 {
+    -webkit-animation-delay: 1.9s;		
+}	
+div#center div.letter_container_21 {
+    -webkit-animation-delay: 2s;		
+}
+div#center div.letter_container_22 {
+    -webkit-animation-delay: 2.1s;		
+}	
+
+div#center div.letter_container_23 {
+    -webkit-animation-delay: 2.2s;		
+}	
+
+div#center div.letter_container_24 {
+    -webkit-animation-delay: 2.3s;		
+}	
+
+div#center div.letter_container_25 {
+    -webkit-animation-delay: 2.4s;		
+}	
+
+div#center div.letter_container_26 {
+    -webkit-animation-delay: 2.5s;		
+}	
+
+div#center div.letter_container_27 {
+    -webkit-animation-delay: 2.6s;		
+}	
+div#center div.letter_container_28 {
+    -webkit-animation-delay: 2.7s;		
+}
+div#center div.letter_container_29 {
+    -webkit-animation-delay: 2.8s;		
+}	
+
+div#center div.letter_container_30 {
+    -webkit-animation-delay: 2.9s;		
+}	
+
+div#center div.letter_container_31 {
+    -webkit-animation-delay: 3s;		
+}	
+
+div#center div.letter_container_32 {
+    -webkit-animation-delay: 3.1s;		
+}	
+
+div#center div.letter_container_33 {
+    -webkit-animation-delay: 3.2s;		
+}	
+
+div#center div.letter_container_34 {
+    -webkit-animation-delay: 3.3s;		
+}	

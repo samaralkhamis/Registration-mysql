@@ -1,0 +1,127 @@
+section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+
+.logRegForm .loginnow,
+.logRegForm .lostpass,
+.logRegForm .loginwith,
+.logRegForm .loginwithfb,
+.logRegForm .loginwithgoogle {
+width: 100%;
+height: 60px;
+line-height: 55px;
+text-align: center;
+color: #fff;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+cursor: pointer;
+display: block;
+
+}
+
+.logRegForm .loginnow:focus,
+.logRegForm .lostpass:focus,
+.logRegForm .loginwith:focus,
+.logRegForm .loginwithfb:focus,
+.logRegForm .loginwithgoogle:focus {
+outline: 0px;
+}
+
+
+.logRegForm .loginwith {
+color: #cecece;
+background: none;
+margin: 3px 0px 3px;
+display: inline-block;
+}
+
+.logRegForm .loginnow {
+background: #4e86b7;
+border: 2px solid #4e86b7;
+}
+
+.logRegForm .loginnow:hover {
+background: #ac84f0;
+border-color: #ac84f0;
+}
+
+
+.logRegForm .lostpass {
+background: #555;
+border: 2px solid #555;
+}
+
+.logRegForm .lostpass:hover {
+background: #9e8b8000;
+border: 2px siolid #555;
+color: #555
+}
+
+
+.logRegForm .contact_form_wrappre2 {
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+padding: 74px 60px 80px;
+}
+
+.logRegForm {
+padding: 120px 0px 120px;
+}
+
+.logRegForm .input-group-text {
+padding: 0px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+color: #495057;
+text-align: center;
+background-color: #4e86b7;
+border: 0px solid #ced4da;
+border-radius: 0px;
+width: 60px;
+height: 60px;
+}
+
+.logRegForm .input-group-text i {
+color: #fff;
+width: 60px;
+height: 60px;
+text-align: center;
+line-height: 20px;
+font-size: 10px;
+}
+
+
+.logRegForm .input-group input {
+padding-left: 10px;
+border: 2px solid rgba(0, 0, 0, 0.10);
+}
+
+.logRegForm textarea {
+width: 70%;
+height: 100px;
+resize: none;
+padding-left: 30px;
+padding-top: 25px;
+padding-right: 60px;
+border: 2px solid rgba(0, 0, 0, 0.10);
+}
+
+.logRegForm .input-group  {
+height:5%;
+border-radius: 0px;
+}
+
+
+.logRegForm h2{
+color: #333;
+text-transform: capitalize;
+font-weight: 700;
+display: block;
+text-align: center;
+margin-bottom: 63px;
+font-size: 46px;
+line-height: 50px;
+}
